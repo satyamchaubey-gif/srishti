@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fff4f7">
+  <title>A Little Place For You ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="petals" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-orbit orbit-a"></div>
+      <div class="hero-orbit orbit-b"></div>
+      <div class="hero-card">
+        <div class="tiny-label">A tiny corner of the internet</div>
+        <h1>made<br><span>just for you.</span></h1>
+        <p class="hero-sub">Two photos. A bunch of memories. And a little surprise waiting at the end.</p>
+        <button class="primary" data-scroll="#story">come in <span>→</span></button>
+        <div class="scroll-note">scroll slowly ♡</div>
+      </div>
+      <div class="floating-note note-1">you + me</div>
+      <div class="floating-note note-2">good memories</div>
+      <div class="floating-note note-3">keep this ♡</div>
+    </section>
+
+    <section class="intro" id="story">
+      <div class="section-kicker">01 / our little story</div>
+      <div class="split">
+        <div>
+          <h2>Some moments<br>deserve their<br><em>own little home.</em></h2>
+        </div>
+        <div class="intro-copy">
+          <p>This isn't meant to be perfect. It's meant to feel like the two of us: a little random, a little silly, and full of moments worth keeping.</p>
+          <p>So here's a tiny digital scrapbook — made from the memories I already have, with a few empty spaces for the ones still waiting to happen.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="memories">
+      <div class="section-kicker">02 / memories</div>
+      <div class="memory-grid">
+        <article class="photo-card big">
+          <img src="assets/memory-01.jpg" alt="A shared memory">
+          <div class="photo-caption">
+            <span>memory no. 01</span>
+            <strong>One of those moments<br>you just keep.</strong>
+          </div>
+        </article>
+        <article class="photo-card tilt">
+          <img src="assets/memory-02.jpg" alt="Another shared memory">
+          <div class="photo-caption">
+            <span>memory no. 02</span>
+            <strong>Same people.<br>Different little adventure.</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="reasons">
+      <div class="section-kicker">03 / tiny things</div>
+      <h2>The little things<br><em>matter most.</em></h2>
+      <div class="reason-grid">
+        <button class="reason" data-reveal="01 — The way ordinary moments somehow become memories.">
+          <span>01</span><b>ordinary → special</b><i>+</i>
+        </button>
+        <button class="reason" data-reveal="02 — The laughs that happen when absolutely nothing was supposed to be funny.">
+          <span>02</span><b>random laughter</b><i>+</i>
+        </button>
+        <button class="reason" data-reveal="03 — Having someone whose presence can make a normal day feel different.">
+          <span>03</span><b>your presence</b><i>+</i>
+        </button>
+        <button class="reason" data-reveal="04 — All the memories we haven't made yet.">
+          <span>04</span><b>to be continued...</b><i>+</i>
+        </button>
+      </div>
+      <div class="reveal-box" id="revealBox">tap one ♡</div>
+    </section>
+
+    <section class="letter">
+      <div class="letter-wrap">
+        <div class="envelope">
+          <div class="stamp">♡</div>
+          <div class="envelope-label">OPEN WHEN YOU NEED A SMILE</div>
+          <button class="letter-button" id="openLetter">open this</button>
+        </div>
+        <div class="letter-content" id="letterContent">
+          <div class="section-kicker">a small letter</div>
+          <h2>Hey, you.</h2>
+          <p>Some things are easier to put into a little website than into one message.</p>
+          <p>Thank you for being part of so many good moments. For the laughs, the random conversations, the quiet moments, and all the memories that somehow became important.</p>
+          <p>Keep this page somewhere safe. We can always add another photo, another memory, another chapter.</p>
+          <p class="signature">— from someone who thinks you're pretty special ♡</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="future">
+      <div class="section-kicker">04 / still loading...</div>
+      <div class="future-card">
+        <div class="loader-orb"></div>
+        <h2>More memories<br><em>coming soon.</em></h2>
+        <p>Because this little page isn't supposed to be finished yet.</p>
+        <div class="future-line">
+          <span>today</span><span></span><span>next memory</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="final">
+      <div class="stars"></div>
+      <div class="final-inner">
+        <div class="tiny-label">you made it to the end</div>
+        <h2>Keep the good<br><em>ones close.</em></h2>
+        <p>And whenever you come back here, maybe there'll be something new.</p>
+        <button class="primary light" data-scroll="#home">back to the beginning ↑</button>
+        <div class="final-heart">♡</div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="close" id="closeModal">×</button>
+      <div class="modal-heart">♡</div>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
